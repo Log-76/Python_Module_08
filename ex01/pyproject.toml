@@ -1,0 +1,22 @@
+[project]
+name = "pyproject-toml"
+version = "1"
+description = "package"
+authors = [
+    {name = "lleriche"}
+]
+license = {text = "lleriche"}
+requires-python = "3.10.12"
+dependencies = [
+    "pandas (<3.0.0)",
+    "numpy (<2.0.0)",
+    "matplotlib (>=3.10.8,<4.0.0)",
+    "requests (>=2.32.5,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "pyproject"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
